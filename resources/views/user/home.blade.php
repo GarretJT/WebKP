@@ -46,7 +46,7 @@
     <h2>TEMUKAN CITA RASA KHAS SURABAYA</h2>
     <h1>JELAJAHI DUNIA KULINER KAMI</h1>
     <h2>BUKA SETIAP HARI PK. 08:00 - 16.30</h2>
-    <a href="#about" class="btn-get-started">Lanjutkan</a>
+    <a href="#about" class="btn-get-started">Suvenir Kami</a>
 @endsection
 
 
@@ -69,10 +69,10 @@
   
         </div>
       </section>
-<!-- WhatsApp Floating Icon -->
-<a href="https://api.whatsapp.com/send?phone=6282139003999" target="_blank" class="whatsapp-icon">
-  <i class="fa fa-whatsapp"></i>
-</a>
+    <!-- WhatsApp Floating Icon -->
+    <a href="https://api.whatsapp.com/send?phone=6282139003999" target="_blank" class="whatsapp-icon">
+      <i class="fa fa-whatsapp"></i>
+    </a>
 
 
  <!--========================== Google Maps Section ============================-->

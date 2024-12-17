@@ -15,23 +15,66 @@
 @endsection
 
 @section('hero')
-    <h1>Contact Jogja-Travel</h1>
+    <h1>Kontak Kami</h1>
     <h2>Bergabung dan liburan bersama Kami</h2>
 @endsection
 
 @section('content')
 
-  <section id="contact">
+    <!-- WhatsApp Floating Icon -->
+    <a href="https://api.whatsapp.com/send?phone=6282139003999" target="_blank" class="whatsapp-icon">
+      <i class="fa fa-whatsapp"></i>
+    </a>
+
+
+ <!--========================== Google Maps Section ============================-->
+<section id="google-maps">
+  <div class="container wow fadeIn">
+    <div class="section-header">
+      <h3 class="section-title">Lokasi Kami</h3>
+      <p class="section-description">Temukan kami di alamat berikut:</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="map-container">
+          <!-- Google Maps Embed -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.1757687726936!2d112.36837327500268!3d-7.55580509245799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e786d07706e5635%3A0x13e557c51ff9348!2sKuliner%20Maha%20Vihara%20Mojopahit!5e0!3m2!1sen!2sid!4v1734451840517!5m2!1sen!2sid"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+    <section id="contact">
     <div class="container wow fadeInUp">
       <div class="section-header">
-        <h3 class="section-title">Contact</h3>
-        <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        <h3 class="section-title">Kontak</h3>
+        <p class="section-description">Kontak kami melalui detil kontak berikut:</p>
       </div>
     </div>
 
-    {{-- <div id="google-map" data-latitude="40.713732" data-longitude="-74.0092704"></div> --}}
+    <!-- Additional Information Section -->
+    <div class="row mt-4 justify-content-center">
+      <div class="col-md-6">
+        <div class="location-info text-center">
+          <div class="location-item mb-3">
+            <i class="fa fa-map-marker" style="font-size: 24px;"></i> 
+            <span>Maha Vihara Majapahit, Bejijong, Trowulan, Mojokerto Regency, East Java 61362</span>
+          </div>
+          <div class="location-item mb-3">
+            <i class="fa fa-phone" style="font-size: 24px;"></i>
+            <span>+62 123-456-789</span>
+          </div>
+          <div class="location-item">
+            <i class="fa fa-envelope" style="font-size: 24px;"></i>
+            <span>kulinermojopahit@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- #google-maps -->
 
-    <div class="container wow fadeInUp">
+    <!-- <div class="container wow fadeInUp">
       <div class="row justify-content-center">
 
         <div class="col-lg-3 col-md-4">
@@ -52,19 +95,19 @@
               <i class="fa fa-phone"></i>
               <p>0831-6179-3990</p>
             </div>
-          </div>
-
+          </div> -->
+<!-- 
           <div class="social-links">
             <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
             <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
             <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
             <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
             <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-          </div>
+          </div> -->
 
         </div>
 
-        <div class="col-lg-5 col-md-8">
+        <!-- <div class="col-lg-5 col-md-8">
           <div class="form">
             <div id="sendmessage">Your message has been sent. Thank you!</div>
             <div id="errormessage"></div>
@@ -88,7 +131,7 @@
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
-        </div>
+        </div> -->
 
       </div>
 
