@@ -19,6 +19,7 @@ Route::prefix('admin')->group(function(){
     return redirect("/login"); 
   })->name("register");
   
+  
   Auth::routes();
   
   // Route Dashboard

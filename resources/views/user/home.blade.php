@@ -69,10 +69,11 @@
   
         </div>
       </section>
-  <!-- WhatsApp Floating Icon -->
+<!-- WhatsApp Floating Icon -->
 <a href="https://api.whatsapp.com/send?phone=6282139003999" target="_blank" class="whatsapp-icon">
   <i class="fa fa-whatsapp"></i>
 </a>
+
 
  <!--========================== Google Maps Section ============================-->
 <section id="google-maps">
@@ -114,50 +115,6 @@
 </section><!-- #google-maps -->
 
 
-
-  
-      <!--========================== Call To Action Section ============================-->
-      <section id="call-to-action">
-        <div class="container wow fadeIn">
-          <div class="row">
-            <div class="col-lg-9 text-center text-lg-left">
-              <h3 class="cta-title">Bergabung dan Bepergian Bersama Kami</h3>
-              <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="col-lg-3 cta-btn-container text-center">
-              <a class="cta-btn align-middle" href="#">Contact</a>
-            </div>
-          </div>
-  
-        </div>
-      </section>
-  
-      <!--========================== category Section ============================-->
-      <section id="category">
-        <div class="container wow fadeInUp">
-          <div class="section-header">
-            <h3 class="section-title">Blog Kami</h3>
-            <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-          </div>
-          <div class="row">
-  
-          <div class="row" id="category-wrapper">
-            @foreach ($categories as $category)
-                <div class="col-md-4 col-sm-12 category-item filter-app" >
-                      <a href="">
-                        <img src="{{asset('category_image/'.$category->image)}}" class="image-center">
-                        <div class="details">
-                          <h4>{{$category->name}}</h4>
-                          <span>{{$category->description}}</span>
-                        </div>
-                      </a>
-                </div>
-            @endforeach  
-          </div>
-  
-        </div>
-      </section>
-  
       <!--========================== Gallery Section ============================-->
       <section id="contact" style="padding-bottom:85px">
         <div class="container wow fadeInUp">

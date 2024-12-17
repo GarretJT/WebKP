@@ -51,7 +51,7 @@
           <li class="{{$url=='home'?'menu-active':''}}"><a href="{{url('home')}}">Home</a></li>
           <li class="{{$url=='blog'?'menu-active':''}}"><a href="{{url('blog')}}">Menu</a></li>
           <li class="{{$url=='destination'?'menu-active':''}}"><a href="{{url('destination')}}">Artikel</a></li>
-          <li class="{{$url=='contact'?'menu-active':''}}"><a href="{{url('contact')}}">Kontak </a></li>
+          <li class="{{$url=='contact'?'menu-active':''}}"><a href="{{url('contact')}}">Kontak kami </a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
