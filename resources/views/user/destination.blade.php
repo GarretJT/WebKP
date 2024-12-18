@@ -110,47 +110,31 @@
 @section('content')
     <section id="articles" class="container">
         <div class="row">
-            <!-- Article 1 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Article Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Artikel 1: Panduan Liburan di Jogja</h5>
-                        <p class="card-text">Temukan destinasi terbaik untuk liburan Anda di Jogja, dari tempat wisata alam hingga budaya yang kaya.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#">Baca</a>
-                    </div>
-                </div>
+            <div class="col-md-12">
+                <h2 class="text-center mt-5 mb-5">TENANT KAMI</h2>
             </div>
+        </div>
+        <div class="row">
 
-            <!-- Article 2 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Article Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Artikel 2: Makanan Khas Jogja yang Wajib Dicoba</h5>
-                        <p class="card-text">Makanan khas Jogja yang lezat dan unik yang dapat Anda nikmati selama perjalanan liburan Anda.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#">Baca</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Article 3 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Article Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Artikel 3: 5 Tempat Wisata Tersembunyi di Jogja</h5>
-                        <p class="card-text">Jelajahi tempat-tempat tersembunyi yang jarang diketahui oleh wisatawan, tetapi sangat menakjubkan!</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#">Baca</a>
+            @foreach ($destinations as $index => $destination)
+                <!-- Article 1 -->
+                <div class="{{ $index === 0 ? 'col-md-12' : 'col-lg-4 col-md-6' }}">
+                    <div class="card">
+                        @if($destination->image)
+                            <img src="{{asset('destinations_image/'.$destination->image)}}" alt="{{$destination->title}}" style="{{ $index == 0 ? 'height: 600px;' : ''}}">
+                        @else
+                            <img src="https://via.placeholder.com/300x200" alt="Article Image" >
+                        @endif
+                        <div class="card-body">
+                            <h5 class="card-title">{{$destination->title}}</h5>
+                            <div class="card-text">{{$destination->content}}</div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="/destination/{{$destination->slug}}">Baca Detail</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            @endforeach
         </div>
     </section>
 @endsection

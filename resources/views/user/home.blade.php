@@ -60,11 +60,9 @@
   
             <div class="col-lg-7 content order-lg-1 order-2">
               <h2 class="title">Tentang Kami</h2>
-              <p> {!!$about[0]->caption!!}</p>
+              
             </div>
   
-            <div class="col-lg-5 background order-lg-2 order-1 wow fadeInRight" 
-                style="background: url('{{asset('about_image/'.$about[0]->image)}}') center top no-repeat; background-size: cover;"></div>
           </div>
   
         </div>

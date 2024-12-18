@@ -1,12 +1,14 @@
 @if (count($articles) != 0)
+<div class="row">
   @foreach ($articles as $article)
-      <div class="section-header mt-3">
-        <div class="mb-3">
-          <a href="{{route('blog.show', [$article->slug])}}" class="decoration-none">
-            <div class="text-primary link-hover" style="font-size: 40px; letter-spacing: .5px; line-height: 1.3;">
-              {{$article->title}}
-            </div>
-          </a>
+    <div class="col-md-4 card mb-4 mx-2" style="max-width: 18rem;">
+      <div class="card-body">
+        <a href="{{route('blog.show', [$article->slug])}}" class="decoration-none">
+          <h5 class="card-title">
+            {{$article->title}}
+          </h5>
+        </a>
+        <div class="card-meta">
           <div class="mt-1">
             <small class="font-italic">Created At : {{date('d M Y', strtotime($article->created_at))}} |</small>
             @foreach($article->categories as $value)
@@ -18,18 +20,28 @@
             @endforeach
           </div>
         </div>
-
-          @php
-              // delete tag image;
-              $content = preg_replace('/<img .*. \/>|<p.*?.>|<\/p>/', '', $article->content);
-          @endphp
-        <p> 
-          &emsp;&emsp;&emsp; {!! Str::limit($content, 725, ' . . .') !!}
-        </p>
-          <a href="{{route('blog.show', [$article->slug])}}" class="ml-3"> <span class="text-primary">Read More <i class="fa fa-long-arrow-right"></i> </span></a>
-        <hr class="mt-3">
+        <div class="card-text">
+            @php
+              // Extract only the paragraph text without tags
+              $content = preg_replace([
+                '/<a[^>]*><img[^>]*><\/a>/i', // Remove <a> tags containing <img>
+                '/<img[^>]*>/i',              // Remove standalone <img> tags
+                '/<p.*?>(.*?)<\/p>/si'        // Extract text inside <p> tags
+              ], [
+                '', // Replace <a> with <img> with nothing
+                '', // Replace <img> with nothing
+                '$1' // Extract only content inside <p>
+              ], $article->content);
+            @endphp
+            <p>
+                &emsp;&emsp;&emsp; {!! Str::limit($content, 725, ' . . .') !!}
+            </p>
+        </div>      
+        <a href="/blog/{{$article->slug}}" class="btn btn-primary">Lihat Detail <i class="fa fa-long-arrow-right"></i></a>
       </div>
+    </div>
     @endforeach
+</div>
 @else
   <style>
     .page {

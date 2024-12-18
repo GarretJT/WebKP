@@ -141,7 +141,7 @@ class ArticleController extends Controller
     return redirect()->route('articles.index')->with('success', 'Article permanenly delete');
   }
 
-  public function upload(Reques $request){
+  public function upload(Request $request){
     if($request->hasFile('upload')) {
       // $originName = $request->file('upload')->getClientOriginalName();
       // $fileName   = pathinfo($originName, PATHINFO_FILENAME);
