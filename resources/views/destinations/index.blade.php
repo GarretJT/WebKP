@@ -2,7 +2,7 @@
 
 @section('title', 'Destinations')
 
-@section('breadcrumbs', 'Overview Destinations')
+@section('breadcrumbs', 'Destinations')
 
 @section('css')
   <style>
@@ -20,7 +20,7 @@
           
           {{-- button create --}}
           <div class="mb-5 text-right">
-            <a href="{{route('destinations.create')}}" class="btn btn-sm btn-success"> <i class="fa fa-plus"></i> Create</a>
+            <a href="{{route('destinations.create')}}" class="btn btn-sm btn-success"> <i class="fa fa-plus"></i> Buat Baru</a>
           </div>
 
           {{-- display filter --}}
@@ -63,10 +63,10 @@
               <thead class="text-light" style="background-color:#33b751 !important">
                   <tr>
                       {{-- <th width="12px">No</th> --}}
-                      <th width="160px">Image</th>
-                      <th class="">Destination Title</th>
+                      <th width="160px">Gambar</th>
+                      <th class="">Nama Menu</th>
                       <th width="150px"></th>
-                      <th width="88px">Action</th>
+                      <th width="88px">Aksi</th>
                   </tr>
               </thead>
               <tbody>

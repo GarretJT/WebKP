@@ -1,8 +1,8 @@
 @extends('layouts.admin')
 
-@section('title', 'Articles')
+@section('title', 'Artikel')
 
-@section('breadcrumbs', 'Overview Articles')
+@section('breadcrumbs', 'Artikel')
 
 @section('css')
     <style>
@@ -63,7 +63,7 @@
                         <thead class="text-light" style="background-color:#33b751 !important">
                             <tr>
                                 <th width="12px">No</th>
-                                <th class="text-center">Article Title</th>
+                                <th class="text-center">Judul Artikel</th>
                                 <th width="150px"></th>
                                 <th width="88px">Action</th>
                             </tr>

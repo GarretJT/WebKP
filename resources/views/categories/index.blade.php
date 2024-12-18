@@ -11,7 +11,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="my-3 text-right">
-                            <a href="{{route('categories.create')}}" class="btn btn-sm btn-success"> <i class="fa fa-plus"></i> Create</a>
+                            <a href="{{route('categories.create')}}" class="btn btn-sm btn-success"> <i class="fa fa-plus"></i> Buat Baru</a>
                         </div>
 
                         @if (session('success'))
@@ -67,7 +67,7 @@
             <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title d-inline">Delete Category</h5>
+                    <h5 class="modal-title d-inline">Hapus</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>

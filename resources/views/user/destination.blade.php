@@ -4,7 +4,7 @@
     <style>
         /* Hero Section with Parallax Effect */
         #hero {
-            background: url('{{asset('user/images/destination.png')}}') top center;
+            background: url('{{asset('user/images/cover.png')}}') top center;
             background-attachment: fixed; /* Keeps the image still while scrolling */
             background-repeat: no-repeat;
             width: 100%;
@@ -119,7 +119,7 @@
                         <p class="card-text">Temukan destinasi terbaik untuk liburan Anda di Jogja, dari tempat wisata alam hingga budaya yang kaya.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#">Read More</a>
+                        <a href="#">Baca</a>
                     </div>
                 </div>
             </div>
@@ -133,7 +133,7 @@
                         <p class="card-text">Makanan khas Jogja yang lezat dan unik yang dapat Anda nikmati selama perjalanan liburan Anda.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#">Read More</a>
+                        <a href="#">Baca</a>
                     </div>
                 </div>
             </div>
@@ -147,7 +147,7 @@
                         <p class="card-text">Jelajahi tempat-tempat tersembunyi yang jarang diketahui oleh wisatawan, tetapi sangat menakjubkan!</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#">Read More</a>
+                        <a href="#">Baca</a>
                     </div>
                 </div>
             </div>

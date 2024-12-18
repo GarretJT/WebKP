@@ -9,7 +9,7 @@
             height: 180px;
         }
         #hero{
-            background: url('{{asset('user/images/hero-bg.jpg')}}') top center;
+            background: url('{{asset('user/images/cover.png')}}') top center;
         }
         .image-center{
           display: block;
@@ -120,7 +120,7 @@
         <div class="container wow fadeInUp">
           <div class="section-header">
             <h3 class="section-title">Galeri</h3>
-            <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+            <p class="section-description">Inilah Kisah Kita</p>
           </div>
         </div>
   
@@ -129,21 +129,9 @@
   
             <div class="col-lg-12 col-md-4">
               <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 full-img" style="background-image: url({{asset('user/images/gallery/prambanan.png')}})">
+                <div class="col-lg-3 col-md-4 col-sm-6 full-img" style="background-image: url({{asset('user/images/2.jpg')}})">
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 full-img" style="background-image: url({{asset('user/images/gallery/wisata2.png')}})">
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 full-img" style="background-image: url({{asset('user/images/gallery/wisata3.png')}})">
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 full-img" style="background-image: url({{asset('user/images/gallery/wisata4.png')}})">
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 full-img" style="background-image: url({{asset('user/images/gallery/wisata5.png')}})">
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 full-img" style="background-image: url({{asset('user/images/gallery/wisata6.png')}})">
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 full-img" style="background-image: url({{asset('user/images/gallery/wisata7.png')}})">
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 full-img" style="background-image: url({{asset('user/images/gallery/wisata8.png')}})">
+                <div class="col-lg-3 col-md-4 col-sm-6 full-img" style="background-image: url({{asset('user/images/3.png')}})">
                 </div>
               </div>
             </div>

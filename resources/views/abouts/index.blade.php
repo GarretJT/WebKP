@@ -5,7 +5,7 @@
 @section('breadcrumbs', 'About')
 
 @section('second-breadcrumb')
-    <li> Overview About</li>
+    <li> About</li>
 @endsection
 
 @section('content')
@@ -25,7 +25,7 @@
                 
             @endif
             
-            <h3 class="text-center mt-3 mb-5">View About</h3>
+            <h3 class="text-center mt-3 mb-5">Halaman Home</h3>
             
             <div class="row">
               <div class="col-3">
@@ -36,7 +36,7 @@
               <div class="col-9">
                 <p class="font-weight-bold">Caption:</p>
                 <p> {!!$abouts[0]->caption!!} </p>
-                <a href="{{route('abouts.edit', [$abouts[0]->id])}}" class="btn btn-warning text-light"><i class="fa fa-pencil"></i> Edit Profile</a>
+                <a href="{{route('abouts.edit', [$abouts[0]->id])}}" class="btn btn-warning text-light"><i class="fa fa-pencil"></i> Edit</a>
               </div>
             </div>
               

@@ -3,7 +3,7 @@
 @section('header')
     <style>
         #hero{
-             background: url('{{asset('user/images/destination.png')}}') top center;
+             background: url('{{asset('user/images/cover.png')}}') top center;
             background-attachment: fixed; /* Keeps the image still while scrolling */
             background-repeat: no-repeat;
             width: 100%;

@@ -5,7 +5,7 @@
 @section('breadcrumbs', 'About')
 
 @section('second-breadcrumb')
-    <li> Edit About</li>
+    <li> Edit </li>
 @endsection
 
 @section('content')
@@ -23,9 +23,9 @@
                                 </button>
                             </div>
                             
-                        @endif
+                        @endif  
                         
-                        <h3 class="text-center mt-3 mb-5">Edit About</h3>
+                        <h3 class="text-center mt-3 mb-5">Edit</h3>
                         
                         <div class="row">
                             <div class="col-3 mt-4">
