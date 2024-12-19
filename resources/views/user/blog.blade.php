@@ -28,7 +28,7 @@
 @endsection
 
 @section('hero')
-    <h1>TENANT</h1>
+    <h1>Artikel</h1>
 @endsection
 
 @section('content')  
@@ -38,7 +38,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h2 class="text-center mb-5">TENANT KAMI</h2>
+          <h2 class="text-center mb-5">Artikel</h2>
         </div>
       </div>
       <div class="row">

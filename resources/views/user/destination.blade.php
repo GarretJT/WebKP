@@ -4,13 +4,15 @@
     <style>
         /* Hero Section with Parallax Effect */
         #hero {
-            background: url('{{asset('user/images/cover.png')}}') top center;
-            background-attachment: fixed; /* Keeps the image still while scrolling */
+            background: url('{{ asset('user/images/cover.png') }}') top center;
+            background-attachment: fixed;
+            /* Keeps the image still while scrolling */
             background-repeat: no-repeat;
             width: 100%;
             background-size: cover;
             margin: 0px;
-            height: 250px; /* Adjust the height as necessary */
+            height: 250px;
+            /* Adjust the height as necessary */
         }
 
         /* Styling for the rest of the content */
@@ -59,11 +61,10 @@
 
         /* Card Styling */
         .card {
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            min-height: 100%;
+            /* Memastikan semua card memiliki tinggi penuh */
+            display: flex;
+            flex-direction: column;
         }
 
         .card img {
@@ -73,7 +74,8 @@
         }
 
         .card-body {
-            padding: 15px;
+            flex: 1;
+            /* Membuat isi card fleksibel untuk menyesuaikan tinggi */
         }
 
         .card-title {
@@ -87,8 +89,8 @@
         }
 
         .card-footer {
-            text-align: right;
-            background: #f8f8f8;
+            background-color: #f8f8f8;
+            text-align: center;
             padding: 10px;
         }
 
@@ -115,22 +117,23 @@
             </div>
         </div>
         <div class="row">
-
-            @foreach ($destinations as $index => $destination)
-                <!-- Article 1 -->
-                <div class="{{ $index === 0 ? 'col-md-12' : 'col-lg-4 col-md-6' }}">
+            @foreach ($destinations as $destination)
+                <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
                     <div class="card">
-                        @if($destination->image)
-                            <img src="{{asset('destinations_image/'.$destination->image)}}" alt="{{$destination->title}}" style="{{ $index == 0 ? 'height: 600px;' : ''}}">
+                        @if ($destination->image)
+                            <img src="{{ asset('destinations_image/' . $destination->image) }}"
+                                alt="{{ $destination->title }}" class="card-img-top"
+                                style="height: 200px; object-fit: cover;">
                         @else
-                            <img src="https://via.placeholder.com/300x200" alt="Article Image" >
+                            <img src="https://via.placeholder.com/300x200" alt="Article Image" class="card-img-top"
+                                style="height: 200px; object-fit: cover;">
                         @endif
                         <div class="card-body">
-                            <h5 class="card-title">{{$destination->title}}</h5>
-                            <div class="card-text">{{$destination->content}}</div>
+                            <h5 class="card-title">{{ $destination->title }}</h5>
+                            <div class="card-text">{{ $destination->content }}</div>
                         </div>
                         <div class="card-footer">
-                            <a href="/destination/{{$destination->slug}}">Baca Detail</a>
+                            <a href="/destination/{{ $destination->slug }}">Baca Detail</a>
                         </div>
                     </div>
                 </div>

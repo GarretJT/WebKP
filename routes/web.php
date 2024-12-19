@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DestinationController;
 
 Route::get('/', function(){return redirect('/home');});
 Route::get('/home', 'UserController@home')->name('home');
@@ -45,6 +46,7 @@ Route::prefix('admin')->group(function(){
   Route::get('/abouts', 'AboutController@index')->name('abouts.index')->middleware('auth');
   Route::get('/abouts/{about}/edit', 'AboutController@edit')->name('abouts.edit')->middleware('auth');
   Route::put('/abouts/{about}', 'AboutController@update')->name('abouts.update')->middleware('auth');
-    
+  
+
     
 });

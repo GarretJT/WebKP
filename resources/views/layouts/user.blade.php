@@ -8,8 +8,8 @@
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="{{asset('user/images/favicon.png')}}" rel="icon">
-  <link href="{{asset('user/images/apple-touch-icon.png')}}" rel="apple-touch-icon">
+  <link href="{{asset('user/images/ubaya.png')}}" rel="icon">
+  <link href="{{asset('user/images/ubaya.png')}}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
@@ -41,7 +41,7 @@
 
       <div id="logo" class="pull-left">
         <a href="#hero">
-          <img src="{{asset('user/images/icon.png')}}" style="margin-right:5px"/></img>
+          <img src="{{ asset('user/images/ubaya.png') }}" style="width: 50px; height: 50px; margin-right: 5px;" />
           <h2 class="d-inline text-light">Kuliner Mojopahit</h2>
         </a>
       </div>
@@ -49,7 +49,7 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="{{$url=='home'?'menu-active':''}}"><a href="{{url('home')}}">Home</a></li>
-          <li class="{{$url=='blog'?'menu-active':''}}"><a href="{{url('blog')}}">Blog</a></li>
+          <li class="{{$url=='blog'?'menu-active':''}}"><a href="{{url('blog')}}">Artikel</a></li>
           <li class="{{$url=='destination'?'menu-active':''}}"><a href="{{url('destination')}}">Tenant</a></li>
           <li class="{{$url=='contact'?'menu-active':''}}"><a href="{{url('contact')}}">Kontak kami </a></li>
         </ul>
