@@ -20,7 +20,7 @@
                     
                     {{-- button create --}}
                     <div class="mb-5 text-right">
-                        <a href="{{route('articles.create')}}" class="btn btn-sm btn-success"> <i class="fa fa-plus"></i> Create</a>
+                        <a href="{{route('articles.create')}}" class="btn btn-sm btn-success"> <i class="fa fa-plus"></i> Tambah Artikel </a>
                     </div>
 
                     {{-- display filter --}}
@@ -64,8 +64,8 @@
                             <tr>
                                 <th width="12px">No</th>
                                 <th class="text-center">Judul Artikel</th>
-                                <th width="150px"></th>
-                                <th width="88px">Action</th>
+                                <th width="88px">Status</th>
+                                <th width="88px">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -88,6 +88,8 @@
                                     <td class="text-right pr-4">
                                         @if ($article->status=='DRAFT')
                                             <span class="font-italic text-danger">Draft</span>
+                                        @elseif ($article->status == 'PUBLISH')
+                                            <span class="font-italic text-success">Publish</span>
                                         @endif
                                     </td>
                                     <td>

@@ -25,21 +25,33 @@
                 
             @endif
             
-            <h3 class="text-center mt-3 mb-5">Halaman Home</h3>
+         <h3 class="text-center mt-3 mb-5">Halaman Home</h3>
+            <div class="row justify-content-center">
+              <div class="col-md-10">
+                <div class="row align-items-center">
+                  <!-- Gambar -->
+                  <div class="col-md-5 mb-3 mb-md-0">
+                    <img src="{{ asset('about_image/' . $abouts[0]->image) }}"
+                         alt="image"
+                         class="img-fluid rounded shadow w-100" />
+                  </div>
             
-            <div class="row">
-              <div class="col-3">
-                <div class="card shadow" >
-                  <img src="{{asset('about_image/'.$abouts[0]->image)}}" class="card-img-top" alt="image">
+                  <!-- Caption -->
+                  <div class="col-md-7">
+                    <div class="p-2 text-dark">
+                      {!! $abouts[0]->caption !!}
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Tombol Edit -->
+                <div class="text-center mt-4">
+                  <a href="{{ route('abouts.edit', [$abouts[0]->id]) }}" class="btn btn-warning text-light">
+                    <i class="fa fa-pencil"></i> Edit
+                  </a>
                 </div>
               </div>
-              <div class="col-9">
-                <p class="font-weight-bold">Caption:</p>
-                <p> {!!$abouts[0]->caption!!} </p>
-                <a href="{{route('abouts.edit', [$abouts[0]->id])}}" class="btn btn-warning text-light"><i class="fa fa-pencil"></i> Edit</a>
-              </div>
             </div>
-              
           </div>
         </div>
       </div>
